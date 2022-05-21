@@ -4,6 +4,8 @@ import static co.edu.uco.crosscuting.util.object.UtilObject.getUtilObject;
 
 public class UtilText {
 	public static final String EMPTY ="";
+	public static final String SPACE ="";
+	
     private UtilText(){
     }
     public boolean isNull(String value){
@@ -22,6 +24,10 @@ public class UtilText {
     }
     public static String trim(String value){
         return getDefault(value).trim();
+    }
+    
+    public static boolean isEmpty(String value) {
+    	return
     }
 
 }

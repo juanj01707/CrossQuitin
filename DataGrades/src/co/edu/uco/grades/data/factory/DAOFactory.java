@@ -6,7 +6,7 @@ import co.edu.uco.grades.data.dao.StundentDAO;
 public abstract class DAOFactory {
 	
 	public static DAOFactory getDAOFactory() {
-		return null;
+		return AzureSqlDAOFactory.create();
 	}
 	public abstract void commit();
 	
